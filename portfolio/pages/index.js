@@ -74,13 +74,22 @@ export default function Home() {
             <a
               href="https://www.linkedin.com/in/federicojiglesia/"
               target="_blank"
+              rel="noreferrer"
             >
               <AiFillLinkedin className="dark:text-white social hover:text-blue-500 dark:hover:text-teal-300" />
             </a>
-            <a href="https://twitter.com/iglesfe1" target="_blank">
+            <a
+              href="https://twitter.com/iglesfe1"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiFillTwitterCircle className="dark:text-white social hover:text-sky-400 dark:hover:text-teal-300" />
             </a>
-            <a href="https://github.com/FedericoIglesia" target="_blank">
+            <a
+              href="https://github.com/FedericoIglesia"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiFillGithub className="dark:text-white social hover:text-gray-400 dark:hover:text-teal-300" />
             </a>
           </div>
@@ -158,6 +167,7 @@ export default function Home() {
               <a
                 href="https://github.com/FedericoIglesia/TheFoodPlace"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src="https://user-images.githubusercontent.com/85205823/189451007-7730ea3e-30aa-4c52-8869-708b42eb5985.gif"
@@ -169,6 +179,7 @@ export default function Home() {
               <a
                 href="https://github.com/FedericoIglesia/Athens_front"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src="https://user-images.githubusercontent.com/85205823/192325244-1e46ba81-e6da-4f26-b3f0-ff3fd068a8eb.gif"
@@ -187,6 +198,7 @@ export default function Home() {
               <a
                 href="https://github.com/FedericoIglesia/42iChallenge"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src="https://user-images.githubusercontent.com/85205823/192326604-e28f6f01-cc52-4611-b3cf-4793de6b5a9c.gif"
