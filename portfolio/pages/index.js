@@ -4,7 +4,9 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillGithub,
+  AiOutlineMail,
 } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
 import Image from "next/image";
 import deved from "../public/cvphoto.jpeg";
 import comingsoon from "../public/comingsoon.jpg";
@@ -92,6 +94,13 @@ export default function Home() {
             >
               <AiFillGithub className="dark:text-white social hover:text-gray-400 dark:hover:text-teal-300" />
             </a>
+            <a
+              href="mailto:federico.iglesia@outlook.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <MdEmail className="dark:text-white social hover:text-yellow-600 dark:hover:text-teal-300" />
+            </a>
           </div>
           <div className="mx-auto border-solid border-4 border-teal-500 rounded-full w-80 h-80 overflow-hidden mt-20 md:h-96 md:w-96 dark:bg-white">
             <Image
@@ -101,60 +110,15 @@ export default function Home() {
           </div>
         </section>
         {/* <section>
-          <div>
-            <h3 className="text-3xl py-1 dark:text-white">My Tech Stack</h3>
-            <p className="text-md py-2 leading-8 text-gray-800  dark:text-white">
-              lorem20
-            </p>
-          </div>
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image
-                className="mx-auto"
-                src={design}
-                width={100}
-                height={100}
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2  dark:text-white">
-                Lorem
-              </h3>
-              <p className="py-2  dark:text-white">bla bal bla </p>
-              <h4 className="py-4 text-teal-600">Tools</h4>
-              <p className="text-gray-800 py-1  dark:text-white">React</p>
-              <p className="text-gray-800 py-1  dark:text-white">Figma</p>
-              <p className="text-gray-800 py-1  dark:text-white">Figma</p>
-              <p className="text-gray-800 py-1  dark:text-white">Figma</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image
-                className="mx-auto"
-                src={consulting}
-                width={100}
-                height={100}
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2  dark:text-white">
-                Lorem
-              </h3>
-              <p className="py-2  dark:text-white">bla bal bla </p>
-              <h4 className="py-4 text-teal-600">Tools</h4>
-              <p className="text-gray-800 py-1  dark:text-white">React</p>
-              <p className="text-gray-800 py-1  dark:text-white">Figma</p>
-              <p className="text-gray-800 py-1  dark:text-white">Figma</p>
-              <p className="text-gray-800 py-1  dark:text-white">Figma</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image className="mx-auto" src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  dark:text-white">
-                Lorem
-              </h3>
-              <p className="py-2  dark:text-white">bla bal bla </p>
-              <h4 className="py-4 text-teal-600">Tools</h4>
-              <p className="text-gray-800 py-1  dark:text-white">React</p>
-              <p className="text-gray-800 py-1  dark:text-white">Figma</p>
-              <p className="text-gray-800 py-1  dark:text-white">Figma</p>
-              <p className="text-gray-800 py-1  dark:text-white">Figma</p>
-            </div>
-          </div>
+         <img height={50} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /> 
+          <img height={50} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+            <img height={50} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /> 
+            <img height={50} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"/> 
+            <img height={50} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+    <img src="https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=whit" />
         </section> */}
         <section>
           <div className="mt-15 ">
@@ -162,7 +126,7 @@ export default function Home() {
               My Portfolio
             </h3>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="grid grid-cols-2 gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <a
                 href="https://github.com/FedericoIglesia/TheFoodPlace"
@@ -172,6 +136,7 @@ export default function Home() {
                 <img
                   src="https://user-images.githubusercontent.com/85205823/189451007-7730ea3e-30aa-4c52-8869-708b42eb5985.gif"
                   className="rounded-lg object-cover"
+                  style={{ height: "300px", width: "600px" }}
                 ></img>
               </a>
             </div>
@@ -184,6 +149,7 @@ export default function Home() {
                 <img
                   src="https://user-images.githubusercontent.com/85205823/192325244-1e46ba81-e6da-4f26-b3f0-ff3fd068a8eb.gif"
                   className="rounded-lg object-cover"
+                  style={{ height: "300px", width: "600px" }}
                 ></img>
               </a>
               {/* <Image
@@ -203,6 +169,27 @@ export default function Home() {
                 <img
                   src="https://user-images.githubusercontent.com/85205823/192326604-e28f6f01-cc52-4611-b3cf-4793de6b5a9c.gif"
                   className="rounded-lg object-cover"
+                  style={{ height: "300px", width: "600px" }}
+                ></img>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              {/* <Image
+                src={comingsoon}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              /> */}
+              <a
+                href="https://github.com/FedericoIglesia/Command_Line_Trivia"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="https://user-images.githubusercontent.com/85205823/201187751-886f39f1-13c9-4d8b-8577-20d844eaf227.gif"
+                  className="rounded-lg object-cover"
+                  style={{ height: "300px", width: "600px" }}
                 ></img>
               </a>
             </div>
