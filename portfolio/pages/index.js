@@ -193,15 +193,18 @@ export default function Home() {
                 ></img>
               </a>
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={comingsoon}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
+          </div>
+          <div className="basis-1/3 flex-1">
+            <Image
+              src={comingsoon}
+              className="rounded-lg object-cover"
+              style={{
+                height: "300px",
+                width: "600px",
+                margin: "0 auto 5rem auto",
+              }}
+              layout="responsive"
+            />
           </div>
         </section>
         <div style={{ color: "gray", fontSize: "5px" }}>
