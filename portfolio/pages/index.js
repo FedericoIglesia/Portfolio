@@ -6,12 +6,25 @@ import {
   AiFillGithub,
   AiOutlineMail,
 } from "react-icons/ai";
+import ReactTooltip from "react-tooltip";
 import { MdEmail } from "react-icons/md";
 import Image from "next/image";
 import deved from "../public/cvphoto.jpeg";
 import comingsoon from "../public/comingsoon.jpg";
 import { useState } from "react";
 import Typical from "react-typical";
+import css from "../public/icons8-css3-color/icons8-css3-96.png";
+import csharp from "../public/icons8-c-sharp-logo-ios-16-filled/icons8-c-sharp-logo-80.png";
+import html from "../public/icons8-html-5-color/icons8-html-5-96.png";
+import js from "../public/icons8-javascript-color/icons8-javascript-96.png";
+import node from "../public/icons8-node-js-windows-11-color/icons8-node-js-96.png";
+import react from "../public/icons8-react-office-l/icons8-react-80.png";
+import mui from "../public/icons8-material-ui-color/icons8-material-ui-96.png";
+import postgres from "../public/icons8-postgresql-color/icons8-postgresql-96.png";
+import redux from "../public/icons8-redux-ios-16-filled/icons8-redux-80.png";
+import ts from "../public/icons8-typescript-color/icons8-typescript-96.png";
+import tailwind from "../public/icons8-tailwindcss-color/icons8-tailwindcss-96.png";
+import git from "../public/icons8-git-color/icons8-git-96.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -26,6 +39,10 @@ export default function Home() {
           name="google-site-verification"
           content="Ph0FhLamAEkLg_Ro-M99G6SgCJO3MsORLWLDJY1kd9k"
         />
+        <script
+          src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+          charset="utf-8"
+        ></script>
       </Head>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="  min-h-screen">
@@ -34,6 +51,7 @@ export default function Home() {
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
+                  data-tip="Dark mode"
                   onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer text-2xl "
                 />
@@ -58,9 +76,9 @@ export default function Home() {
               Full Stack Web Developer
             </h3>
             <div className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white">
-              9 years until i finally found what what really motivates me:
+              Finally found what really motivates me:
               <Typical
-                className="text-teal-600 dark:text-white"
+                className="text-teal-600 "
                 steps={[
                   "Coding",
                   3000,
@@ -82,24 +100,40 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              <AiFillLinkedin className="dark:text-white social hover:text-blue-500 dark:hover:text-teal-300" />
+              <AiFillLinkedin
+                data-tip="Linkedin"
+                data-effect="solid"
+                className="dark:text-white social hover:text-blue-500 dark:hover:text-teal-300"
+              />
             </a>
             <a href="skype:echo123?userinfo" target="_blank" rel="noreferrer">
-              <AiFillSkype className="dark:text-white social hover:text-sky-400 dark:hover:text-teal-300" />
+              <AiFillSkype
+                data-tip="Skype: live:federico.iglesia_1"
+                data-effect="solid"
+                className="dark:text-white social hover:text-sky-400 dark:hover:text-teal-300"
+              />
             </a>
             <a
               href="https://github.com/FedericoIglesia"
               target="_blank"
               rel="noreferrer"
             >
-              <AiFillGithub className="dark:text-white social hover:text-gray-400 dark:hover:text-teal-300" />
+              <AiFillGithub
+                data-tip="Github"
+                data-effect="solid"
+                className="dark:text-white social hover:text-gray-400 dark:hover:text-teal-300"
+              />
             </a>
             <a
               href="mailto:federico.iglesia@outlook.com"
               target="_blank"
               rel="noreferrer"
             >
-              <MdEmail className="dark:text-white social hover:text-yellow-600 dark:hover:text-teal-300" />
+              <MdEmail
+                data-tip="federico.iglesia@outlook.com"
+                data-effect="solid"
+                className="dark:text-white social hover:text-yellow-600 dark:hover:text-teal-300"
+              />
             </a>
           </div>
           <div className="mx-auto border-solid border-4 border-teal-500 rounded-full w-80 h-80 overflow-hidden mt-20 md:h-96 md:w-96 dark:bg-white">
@@ -109,20 +143,30 @@ export default function Home() {
             />
           </div>
         </section>
-        {/* <section>
-         <img height={50} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /> 
-          <img height={50} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-            <img height={50} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /> 
-            <img height={50} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"/> 
-            <img height={50} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+        <section>
+          <h3 className="text-3xl py-10 text-center mt-16 mb-9 dark:text-white">
+            My Tech Stack
+          </h3>
 
-<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-    <img src="https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=whit" />
-        </section> */}
+          <div className="md:flex md:justify-center md:gap-3 justify-center  grid gap-3 content-center grid-cols-3 ">
+            <ReactTooltip />
+            <Image data-tip="JavaScript" src={js} />
+            <Image data-tip="HTML" src={html} />
+            <Image data-tip="CSS" src={css} />
+            <Image data-tip="React" src={react} />
+            <Image data-tip="Redux" src={redux} />
+            <Image data-tip="Material UI" src={mui} />
+            <Image data-tip="Tailwind CSS" src={tailwind} />
+            <Image data-tip="Node.js" src={node} />
+            <Image data-tip="TypeScript" src={ts} />
+            <Image data-tip="C#" src={csharp} />
+            <Image data-tip="PostgreSQL" src={postgres} />
+            <Image data-tip="Git" src={git} />
+          </div>
+        </section>
         <section>
           <div className="mt-15 ">
-            <h3 className="text-3xl py-10 text-center  dark:text-white">
+            <h3 className="text-3xl py-10 text-center mt-16 dark:text-white">
               My Portfolio
             </h3>
           </div>
@@ -211,7 +255,10 @@ export default function Home() {
           <a href="https://www.freepik.es/vector-gratis/resumen-proximamente-diseno-fondo-estilo-semitono_10016647.htm#query=coming%20soon&position=3&from_view=keyword">
             Imagen de starline
           </a>{" "}
-          en Freepik
+          en Freepik icon by
+          <a target="_blank" href="https://icons8.com">
+            Icons8
+          </a>
         </div>
       </main>
     </div>
