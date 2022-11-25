@@ -90,7 +90,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 ml-10 mr-10">
+          <div className="text-5xl flex justify-center md:gap-16 py-3 text-gray-600 gap-10">
             <a
               href="https://www.linkedin.com/in/federicojiglesia/"
               target="_blank"
