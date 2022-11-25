@@ -39,10 +39,6 @@ export default function Home() {
           name="google-site-verification"
           content="Ph0FhLamAEkLg_Ro-M99G6SgCJO3MsORLWLDJY1kd9k"
         />
-        <script
-          src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-          charset="utf-8"
-        ></script>
       </Head>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="  min-h-screen">
