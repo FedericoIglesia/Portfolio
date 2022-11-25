@@ -144,7 +144,7 @@ export default function Home() {
             My Tech Stack
           </h3>
 
-          <div className="md:flex md:justify-center md:gap-3 justify-center  grid gap-3 content-center grid-cols-3 ">
+          <div className="md:flex md:justify-center md:gap-3 justify-center  grid gap-3 content-center grid-cols-3 dark:bg-white dark:rounded-full dark:p-10">
             <ReactTooltip />
             <Image data-tip="JavaScript" src={js} />
             <Image data-tip="HTML" src={html} />
@@ -177,6 +177,7 @@ export default function Home() {
                   src="https://user-images.githubusercontent.com/85205823/189451007-7730ea3e-30aa-4c52-8869-708b42eb5985.gif"
                   className="rounded-lg object-cover mb-10"
                   style={{ height: "300px", width: "600px" }}
+                  data-tip="Recipe Full Stack App"
                 ></img>
               </a>
             </div>
@@ -190,6 +191,7 @@ export default function Home() {
                   src="https://user-images.githubusercontent.com/85205823/192325244-1e46ba81-e6da-4f26-b3f0-ff3fd068a8eb.gif"
                   className="rounded-lg object-cover mb-10"
                   style={{ height: "300px", width: "600px" }}
+                  data-tip="Full Stack E-commerce"
                 ></img>
               </a>
               {/* <Image
@@ -210,6 +212,7 @@ export default function Home() {
                   src="https://user-images.githubusercontent.com/85205823/192326604-e28f6f01-cc52-4611-b3cf-4793de6b5a9c.gif"
                   className="rounded-lg object-cover mb-10"
                   style={{ height: "300px", width: "600px" }}
+                  data-tip="Crypto currency checker"
                 ></img>
               </a>
             </div>
@@ -230,6 +233,7 @@ export default function Home() {
                   src="https://user-images.githubusercontent.com/85205823/201187751-886f39f1-13c9-4d8b-8577-20d844eaf227.gif"
                   className="rounded-lg object-cover mb-10"
                   style={{ height: "300px", width: "600px" }}
+                  data-tip="Command Line Game"
                 ></img>
               </a>
             </div>
@@ -243,6 +247,7 @@ export default function Home() {
                 width: "600px",
                 margin: "0 auto 5rem auto",
               }}
+              data-tip="This site is a work in progress. More projects will be posted soon"
               layout="responsive"
             />
           </div>
