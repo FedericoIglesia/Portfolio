@@ -252,7 +252,7 @@ export default function Home() {
             Imagen de starline
           </a>{" "}
           en Freepik icon by
-          <a target="_blank" href="https://icons8.com">
+          <a target="_blank" rel="noreferrer" href="https://icons8.com">
             Icons8
           </a>
         </div>
