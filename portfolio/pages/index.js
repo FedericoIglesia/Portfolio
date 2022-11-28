@@ -41,7 +41,7 @@ export default function Home() {
         />
       </Head>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <section className="  min-h-screen">
+        <section className="">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="text-xl font-burtons">Federico</h1>
             <ul className="flex items-center">
@@ -132,7 +132,7 @@ export default function Home() {
               />
             </a>
           </div>
-          <div className="mx-auto border-solid border-4 border-teal-500 rounded-full w-80 h-80 overflow-hidden mt-20 md:h-96 md:w-96 dark:bg-white">
+          <div className="mx-auto border-solid border-4 border-teal-500 rounded-full w-80 h-85 overflow-hidden mt-20 md:h-96 md:w-96 dark:bg-white">
             <Image
               src={deved}
               className=" rounded-full object-fill w-80 h-85 mx-auto  border-teal-500"
